@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "${mod_website}",
+        "sources": "${mod_sources}",
+        "issues": "${mod_issues_url}"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/${mod_id}/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+          "dev.corgitaco.examplemod.ExampleMod"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14",
+        "fabric": "*",
+        "minecraft": ">=1.20",
+        "java": ">=17",
+        "corgilib": ">=4.0.0.0"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
+  
